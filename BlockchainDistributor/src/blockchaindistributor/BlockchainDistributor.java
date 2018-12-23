@@ -19,7 +19,7 @@ import org.xml.sax.SAXException;
  */
 public class BlockchainDistributor {
 
-    private final static String HOST = "10.5.2.129";
+    private final static String HOST = "Host IP address";
     private static final File readerData = new File("C:\\readerData.xml");
 
     public static void main(String[] args) throws InterruptedException, ParserConfigurationException, SAXException {

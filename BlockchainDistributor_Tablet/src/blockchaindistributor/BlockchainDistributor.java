@@ -18,7 +18,7 @@ import org.xml.sax.SAXException;
  */
 public class BlockchainDistributor {
 
-    private final static String HOST = "10.5.2.200";
+    private final static String HOST = "Host IP address";
     private static final File readerData = new File("C:\\readerData.xml");
     // private static final File tempData = new File("C:\\tempData.xml");
 

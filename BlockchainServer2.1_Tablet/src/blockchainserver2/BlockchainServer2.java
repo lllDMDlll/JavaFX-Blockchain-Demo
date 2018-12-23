@@ -55,7 +55,7 @@ public class BlockchainServer2 {
 
             byte[] bytes = new byte[8192];
 
-            out2 = new FileOutputStream("C:\\Users\\Avery\\Desktop\\BlockchainData\\tempData.xml");
+            out2 = new FileOutputStream("C:\\tempData.xml");
             int count2;
             while ((count2 = in.read(bytes)) > 0) {
                 System.out.println();
@@ -65,12 +65,12 @@ public class BlockchainServer2 {
                 break;
             }
 
-            in2 = new FileInputStream("C:\\Users\\Avery\\Desktop\\BlockchainData\\tempData.xml");
+            in2 = new FileInputStream("C:\\tempData.xml");
 
-            if (!parse.isEmpty("C:\\Users\\Avery\\Desktop\\BlockchainData\\tempData.xml") && !parse.isEmpty("C:\\Users\\Avery\\Desktop\\BlockchainData\\dataCheck.xml") && !parse.isEmpty("C:\\Users\\Avery\\Desktop\\BlockchainData\\readerData.xml")) {
-                if (!parse.getTime("C:\\Users\\Avery\\Desktop\\BlockchainData\\dataCheck.xml").equalsIgnoreCase(parse.getTime("C:\\Users\\Avery\\Desktop\\BlockchainData\\tempData.xml"))) {
-                    out = new FileOutputStream("C:\\Users\\Avery\\Desktop\\BlockchainData\\readerData.xml");
-                    out3 = new FileOutputStream("C:\\Users\\Avery\\Desktop\\BlockchainData\\dataCheck.xml");
+            if (!parse.isEmpty("C:\\tempData.xml") && !parse.isEmpty("C:\\dataCheck.xml") && !parse.isEmpty("C:\\readerData.xml")) {
+                if (!parse.getTime("C:\\dataCheck.xml").equalsIgnoreCase(parse.getTime("C:\\tempData.xml"))) {
+                    out = new FileOutputStream("C:\\readerData.xml");
+                    out3 = new FileOutputStream("C:\\dataCheck.xml");
                     int totalCount = 0;
                     int count;
                     while ((count = in2.read(bytes)) > 0) {
@@ -78,7 +78,7 @@ public class BlockchainServer2 {
                         break;
                     }
                     
-                    in3 = new FileInputStream("C:\\Users\\Avery\\Desktop\\BlockchainData\\dataCheck.xml");
+                    in3 = new FileInputStream("C:\\dataCheck.xml");
                     
                     bytes = new byte[8192];
                     int count1;

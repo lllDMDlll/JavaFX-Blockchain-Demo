@@ -1,0 +1,30 @@
+.backgd{
+    -fx-background-image: url('./Black-red-and-white-wallpaper-hd-background.jpg');
+    -fx-background-size: 100% 100%;
+}
+
+.tablebgd{
+    -fx-background-color: white;
+}
+
+.table-row-cell {
+    -fx-background-color: white;
+    -fx-font-size: 14px;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: white;
+    -fx-font-size: 14px;
+}
+
+.table-view .table-column {
+    -fx-alignment:center;
+}
+
+.table-view .table-row {
+    -fx-alignment:CENTER;
+}
+
+.table-view .column-header {
+    -fx-font-weight:bold;
+}

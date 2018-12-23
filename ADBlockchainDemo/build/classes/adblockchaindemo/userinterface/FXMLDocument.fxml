@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="backgd" stylesheets="@Background.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adblockchaindemo.userinterface.FXMLDocumentController">
+   <top>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="m1" mnemonicParsing="false" text="Quit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem fx:id="m2" mnemonicParsing="false" text="Reset" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <Text fill="#6f6e6e" nodeOrientation="LEFT_TO_RIGHT" pickOnBounds="true" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.15" text="2018 Avery Dennison" textOrigin="TOP" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </bottom>
+   <right>
+      <TitledPane alignment="CENTER" animated="false" collapsible="false" contentDisplay="CENTER" text="Distributed Ledger" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <content>
+            <TableView id="table" fx:id="tableView" editable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.75" prefHeight="918.0" tableMenuButtonVisible="true">
+              <columns>
+                <TableColumn id="locationColumn" fx:id="locationColumn" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="169.0" resizable="false" sortType="DESCENDING" text="Location" />
+                <TableColumn id="itemColumn" fx:id="itemColumn" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="138.0" resizable="false" text="Item" />
+                <TableColumn id="timeColumn" fx:id="timeColumn" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="220.0" resizable="false" sortType="DESCENDING" text="TimeStamp" />
+                <TableColumn id="epcColumn" fx:id="epcColumn" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="278.0" resizable="false" sortType="DESCENDING" text="EPC" />
+              </columns>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TableView>
+         </content>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <padding>
+            <Insets right="40.0" />
+         </padding>
+      </TitledPane>
+   </right>
+   <left>
+      <GridPane alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="NEVER" maxWidth="1170.0" minWidth="0.0" prefWidth="1170.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="656.0" minHeight="0.0" prefHeight="0.0" vgrow="NEVER" />
+          <RowConstraints maxHeight="952.0" minHeight="0.0" prefHeight="952.0" vgrow="NEVER" />
+          <RowConstraints maxHeight="195.0" minHeight="10.0" prefHeight="22.0" vgrow="NEVER" />
+        </rowConstraints>
+         <children>
+            <Text stroke="WHITE" strokeType="OUTSIDE" text="How the Blockchain Works" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="1018.7294921875">
+               <font>
+                  <Font name="KacstPoster" size="39.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets top="50.0" />
+               </GridPane.margin>
+            </Text>
+            <GridPane GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="468.0" minHeight="0.0" prefHeight="76.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="779.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="795.0" minHeight="0.0" prefHeight="66.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="795.0" minHeight="0.0" prefHeight="64.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="795.0" minHeight="0.0" prefHeight="72.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="795.0" minHeight="0.0" prefHeight="62.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="795.0" minHeight="0.0" prefHeight="73.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="795.0" minHeight="0.0" prefHeight="195.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="795.0" minHeight="10.0" prefHeight="295.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fitHeight="685.0" fitWidth="1042.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="90.0" top="215.0" />
+                     </GridPane.margin>
+                     <image>
+                        <Image url="@Blockchain%20FlowChart.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView blendMode="OVERLAY" fitHeight="358.0" fitWidth="326.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="8">
+                     <image>
+                        <Image url="@BlockchainDiagram4.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets bottom="20.0" left="355.0" top="45.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <Rectangle fx:id="rect1" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="18.0" stroke="WHITE" strokeType="INSIDE" width="215.0">
+                     <GridPane.margin>
+                        <Insets left="205.0" top="1652.0" />
+                     </GridPane.margin>
+                  </Rectangle>
+                  <ProgressBar fx:id="bar11" prefWidth="195.0" progress="0.0">
+                     <GridPane.margin>
+                        <Insets left="205.0" top="1652.0" />
+                     </GridPane.margin>
+                  </ProgressBar>
+                  <Rectangle fx:id="rect2" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="18.0" stroke="WHITE" strokeType="INSIDE" width="212.0">
+                     <GridPane.margin>
+                        <Insets left="420.0" top="1652.0" />
+                     </GridPane.margin>
+                  </Rectangle>
+                  <ProgressBar fx:id="bar22" prefWidth="195.0" progress="0.0">
+                     <GridPane.margin>
+                        <Insets left="418.0" top="1652.0" />
+                     </GridPane.margin>
+                  </ProgressBar>
+                  <Rectangle fx:id="rect3" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="18.0" stroke="WHITE" strokeType="INSIDE" width="200.0">
+                     <GridPane.margin>
+                        <Insets left="630.0" top="1652.0" />
+                     </GridPane.margin>
+                  </Rectangle>
+                  <ProgressBar fx:id="bar33" prefWidth="200.0" progress="0.0">
+                     <GridPane.margin>
+                        <Insets left="630.0" top="1652.0" />
+                     </GridPane.margin>
+                  </ProgressBar>
+                  <ProgressBar fx:id="bar1" prefHeight="20.0" prefWidth="210.0" progress="0.0">
+                     <GridPane.margin>
+                        <Insets left="205.0" top="1652.0" />
+                     </GridPane.margin>
+                  </ProgressBar>
+                  <ProgressBar fx:id="bar2" prefHeight="36.0" prefWidth="208.0" progress="0.0">
+                     <GridPane.margin>
+                        <Insets left="418.0" top="1652.0" />
+                     </GridPane.margin>
+                  </ProgressBar>
+                  <ProgressBar fx:id="bar3" prefWidth="200.0" progress="0.0">
+                     <GridPane.margin>
+                        <Insets left="630.0" top="1652.0" />
+                     </GridPane.margin>
+                  </ProgressBar>
+                  <Circle fx:id="c1" fill="#a1a1a1" radius="20.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" GridPane.rowIndex="8">
+                     <GridPane.margin>
+                        <Insets left="190.0" top="120.0" />
+                     </GridPane.margin>
+                  </Circle>
+                  <Circle fx:id="c2" fill="#a1a1a1" radius="20.0" stroke="WHITE" strokeType="INSIDE" GridPane.rowIndex="8">
+                     <GridPane.margin>
+                        <Insets left="395.0" top="120.0" />
+                     </GridPane.margin>
+                  </Circle>
+                  <Circle fx:id="c3" fill="#a1a1a1" radius="20.0" stroke="WHITE" strokeType="INSIDE" GridPane.rowIndex="8">
+                     <GridPane.margin>
+                        <Insets left="605.0" top="120.0" />
+                     </GridPane.margin>
+                  </Circle>
+                  <Circle fx:id="c4" fill="#a1a1a1" radius="20.0" stroke="WHITE" strokeType="INSIDE" GridPane.rowIndex="8">
+                     <GridPane.margin>
+                        <Insets left="810.0" top="120.0" />
+                     </GridPane.margin>
+                  </Circle>
+                  <Text stroke="WHITE" strokeType="OUTSIDE" text="Farm" GridPane.rowIndex="8">
+                     <GridPane.margin>
+                        <Insets bottom="65.0" left="185.0" top="120.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text stroke="WHITE" strokeType="OUTSIDE" text="Distribution Center" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="65.0" left="320.0" top="120.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text stroke="WHITE" strokeType="OUTSIDE" text="Kitchen" GridPane.rowIndex="8">
+                     <GridPane.margin>
+                        <Insets bottom="65.0" left="588.0" top="120.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text stroke="WHITE" strokeType="OUTSIDE" text="Store" GridPane.rowIndex="8">
+                     <GridPane.margin>
+                        <Insets bottom="65.0" left="802.0" top="120.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text stroke="WHITE" strokeType="OUTSIDE" text="Tracking the Item from Farm to Store" GridPane.rowIndex="8">
+                     <GridPane.margin>
+                        <Insets bottom="200.0" left="184.0" top="120.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+                  <ImageView fx:id="check" fitHeight="87.0" fitWidth="47.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Green_check.svg.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="860.0" top="1640.0" />
+                     </GridPane.margin>
+                  </ImageView>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </left>
+</BorderPane>

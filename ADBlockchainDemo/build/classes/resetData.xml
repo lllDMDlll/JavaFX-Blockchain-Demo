@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Event>
+    <Type>Tag Read</Type>
+    <Reader>
+        <Name>RESET</Name>
+    </Reader>
+    <Tag>
+        <TagID>AD67899F3350005FE2C6D7A0</TagID>
+        <Antenna>2</Antenna>
+        <Time>1900-01-01 12:01</Time>
+        <RSSI>-54</RSSI>
+    </Tag>
+</Event>

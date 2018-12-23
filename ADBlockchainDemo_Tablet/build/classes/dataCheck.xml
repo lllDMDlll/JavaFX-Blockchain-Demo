@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Event>
+    <Type>Tag Read</Type>
+    <Reader>
+        <Name>DC_SHIP</Name>
+    </Reader>
+    <Tag>
+        <TagID>99277900980100000004000</TagID>
+        <Antenna>1</Antenna>
+        <Time>2018-06-11 22:47:30</Time>
+        <RSSI>-52</RSSI>
+    </Tag>
+</Event>

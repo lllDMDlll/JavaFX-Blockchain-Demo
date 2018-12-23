@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Event>
+    <Type>Tag Read</Type>
+    <Reader>
+        <Name>Barge|BARGE</Name>
+    </Reader>
+    <Tag>
+        <TagID>AD67899F3350005FE2C6D7A0</TagID>
+        <Antenna>2</Antenna>
+        <Time>2018-06-11 22:47:30</Time>
+        <RSSI>-54</RSSI>
+    </Tag>
+</Event>
